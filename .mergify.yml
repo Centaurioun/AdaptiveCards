@@ -10,7 +10,6 @@ pull_request_rules:
         method: squash
         name: null
         allow_merging_configuration_change: true
-        autosquash: true
         commit_message_template: null
         update_bot_account: null
         update_method: null
@@ -106,7 +105,7 @@ pull_request_rules:
       - label!=ready-to-merge
       - '#approved-reviews-by=0'
       - '#changes-requested-reviews-by=0'
-      - '#review-requested≤1'      
+      - '#review-requested≤1'
     actions:
       merge:
         commit_message_template: null
